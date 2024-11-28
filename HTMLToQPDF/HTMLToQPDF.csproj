@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Title>QuestPDF.HTML</Title>
     <Company></Company>
     <Authors>Relorer</Authors>
     <Description>QuestPDF.HTML is an extension for QuestPDF that allows to generate PDF from HTML. Originally created by Relored, Modified by JeremyVm</Description>
-    <PackageProjectUrl>https://github.com/JeremyVm/HTMLToQPDF</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Relorer/HTMLToQPDF</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
 	<PackageId>QuestPDF.HTML</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/JeremyVm/HTMLToQPDF</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Relorer/HTMLToQPDF</RepositoryUrl>
     <PackageTags>pdf, file, export, generate, generation, tool, create, creation, render, document, format, quest, html, library, converter, open, source, free, standard, core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<AssemblyVersion>1.2.0</AssemblyVersion>
@@ -28,8 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
-	<PackageReference Include="QuestPDF" Version="2024.6.1" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.71" />
+	<PackageReference Include="QuestPDF" Version="2024.10.4" />
   </ItemGroup>
 
   <ItemGroup>
