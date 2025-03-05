@@ -1,4 +1,5 @@
-﻿using QuestPDF.Infrastructure;
+﻿using System;
+using QuestPDF.Infrastructure;
 
 namespace HTMLToQPDF.Utils
 {

@@ -1,4 +1,6 @@
-﻿using HtmlAgilityPack;
+﻿using System.Collections.Generic;
+using System.Linq;
+using HtmlAgilityPack;
 
 namespace HTMLQuestPDF.Extensions
 {

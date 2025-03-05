@@ -17,7 +17,7 @@ namespace HTMLToQPDF.Example.Utilities
                     page.MarginHorizontal(0.5f, Unit.Centimetre);
                     page.MarginVertical(1f, Unit.Centimetre);
 
-                    page.DefaultTextStyle(TextStyle.Default.FontFamily("Arial").FontSize(8).Fallback(y => y.FontFamily("Segoe UI Emoji")));
+                    page.DefaultTextStyle(TextStyle.Default.FontFamily("Arial").FontSize(8).FontFamily("Segoe UI Emoji"));
 
                   /* page.DefaultTextStyle(TextStyle.Default
                     //    .Fallback(y => y.FontFamily("MS Reference Sans Serif")

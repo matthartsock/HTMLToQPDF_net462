@@ -1,4 +1,5 @@
-﻿using HTMLToQPDF.Components;
+﻿using System;
+using HTMLToQPDF.Components;
 using HTMLToQPDF.Utils;
 using QuestPDF.Infrastructure;
 

@@ -1,4 +1,5 @@
-﻿using HtmlAgilityPack;
+﻿using System.Collections.Generic;
+using HtmlAgilityPack;
 using HTMLQuestPDF.Components;
 using HTMLQuestPDF.Components.Tags;
 using HTMLToQPDF.Components;
