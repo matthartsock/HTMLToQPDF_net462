@@ -56,18 +56,43 @@ namespace HTMLQuestPDF
 
         public static IComponent GetComponent(this HtmlNode node, HTMLComponentsArgs args)
         {
-            return node.Name.ToLower() switch
+            switch (node.Name.ToLower())
             {
-                "#text" or "h1" or "h2" or "h3" or "h4" or "h5" or "h6" or "b" or "s" or "strike" or "i" or "small" or "u" or "del" or "em" or "strong" or "sub" or "sup"
-                    => new ParagraphComponent(new List<HtmlNode>() { node }, args),
-                "br" => new BrComponent(node, args),
-                "a" => new AComponent(node, args),
-                "div" => new BaseHTMLComponent(node, args),
-                "table" => new TableComponent(node, args),
-                "ul" or "ol" => new ListComponent(node, args),
-                "img" => new ImgComponent(node, args),
-                _ => new BaseHTMLComponent(node, args),
-            };
+                case "#text":
+                case "h1":
+                case "h2":
+                case "h3":
+                case "h4":
+                case "h5":
+                case "h6":
+                case "b":
+                case "s":
+                case "strike":
+                case "i":
+                case "small":
+                case "u":
+                case "del":
+                case "em":
+                case "strong":
+                case "sub":
+                case "sup":
+                    return new ParagraphComponent(new List<HtmlNode>() { node }, args);
+                case "br":
+                    return new BrComponent(node, args);
+                case "a":
+                    return new AComponent(node, args);
+                case "div":
+                    return new BaseHTMLComponent(node, args);
+                case "table":
+                    return new TableComponent(node, args);
+                case "ul":
+                case "ol":
+                    return new ListComponent(node, args);
+                case "img":
+                    return new ImgComponent(node, args);
+                default:
+                    return new BaseHTMLComponent(node, args);
+            }
         }
     }
 }

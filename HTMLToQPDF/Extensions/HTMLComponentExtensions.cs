@@ -1,5 +1,6 @@
 ﻿using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
+using System;
 
 namespace HTMLQuestPDF.Extensions
 {

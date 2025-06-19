@@ -1,23 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net462</TargetFramework>
     <Nullable>enable</Nullable>
     <Title>QuestPDF.HTML</Title>
     <Company></Company>
+    <LangVersion>8.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Authors>Relorer</Authors>
     <Description>QuestPDF.HTML is an extension for QuestPDF that allows to generate PDF from HTML. Originally created by Relorer (https://github.com/Relorer/HTMLToQPDF), Modified by JeremyVm</Description>
-    <PackageProjectUrl>https://github.com/JeremyVm/HTMLToQPDF</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/matthartsock/HTMLToQPDF_net462</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageId>QuestPDF.HTML</PackageId>
+    <PackageId>QuestPDF.HTML.Net462</PackageId>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/JeremyVm/HTMLToQPDF</RepositoryUrl>
+    <RepositoryUrl>https://github.com/matthartsock/HTMLToQPDF_net462</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>pdf, file, export, generate, generation, tool, create, creation, render, document, format, quest, html, library, converter, open, source, free, standard, core</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>1.4.1</AssemblyVersion>
-    <FileVersion>1.4.1</FileVersion>
-    <Version>1.4.1</Version>
+    <AssemblyVersion>1.4.2</AssemblyVersion>
+    <FileVersion>1.4.2</FileVersion>
+    <Version>1.4.2-net462</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +31,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.74" />
-    <PackageReference Include="QuestPDF" Version="2025.1.6" />
+    <PackageReference Include="QuestPDF" Version="2025.5.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +39,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
   </ItemGroup>
 
 </Project>
